@@ -15,13 +15,11 @@ fun main() {
             dayAmount = 70_000
             monthAmount = 350_000
         }
-
         2 -> {
             cardName = "Visa"
             dayAmount = 40_000
             monthAmount = 250_000
         }
-
         else -> {
             cardName = "Мир"
             dayAmount = 24_000
