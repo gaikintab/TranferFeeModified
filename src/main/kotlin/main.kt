@@ -15,11 +15,13 @@ fun main() {
             dayAmount = 70_000
             monthAmount = 350_000
         }
+
         2 -> {
             cardName = "Visa"
             dayAmount = 40_000
             monthAmount = 250_000
         }
+
         else -> {
             cardName = "Мир"
             dayAmount = 24_000
@@ -36,7 +38,7 @@ fun main() {
     }
 }
 
-fun calculateTransfer(cardName: String, monthAmount: Int, amount: Int): Int {
+fun calculateTransfer(cardName: String = "Мир", monthAmount: Int = 0, amount: Int): Int {
     return when (cardName) {
         "Mastercard" -> if (monthAmount > 75_000) {
             (amount * 0.006 + 20).toInt()
